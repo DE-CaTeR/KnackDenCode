@@ -1,6 +1,5 @@
 package de.acc;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 /**
@@ -17,8 +16,11 @@ public class KnackDenCode {
 			for (int i = 0; i < bytes.length; i++) {
 				mashed[i] = (byte) ~bytes[i];
 			}
+			// #### Debugging
 			System.out.println("in:\t" + Arrays.toString(bytes));
 			System.out.println("out:\t" + Arrays.toString(mashed));
+			
+			
 			return mashed;
 		}
 		
@@ -30,9 +32,12 @@ public class KnackDenCode {
 			for (int i = 0; i < bytes.length; i++) {
 				unmashed[i] = (byte) ~bytes[i];
 			}
+			// #### Debugging
 			System.out.println("in:\t" + Arrays.toString(bytes));
 			System.out.println("out:\t" + Arrays.toString(unmashed));
 			System.out.println("unmashed String: '" + new String(unmashed) + "'");
+			
+			
 			return new String(unmashed);
 		}
 	}
@@ -62,9 +67,6 @@ public class KnackDenCode {
 		}
 		
 
-	}
-	public static String toHex(String arg) {
-		return String.format("%040x", new BigInteger(arg.getBytes()));
 	}
 
 }
