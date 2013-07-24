@@ -45,7 +45,6 @@ public class KnackDenCode {
 	public static void main(String[] args) {
 		// Test the masher
 		String testString = "Ein Team, ein Ziel, ein Weg.";
-		//testString = "Die soll ein langer und lustiger Satz sein, denn ich will testen ob es funktioniert :D";
 		
 		/***  Debugging
 		System.out.println("String:\t" + testString + " (" + testString.length() + ")");
