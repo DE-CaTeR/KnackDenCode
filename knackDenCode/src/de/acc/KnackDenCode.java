@@ -58,8 +58,9 @@ public class KnackDenCode {
 		System.out.println("Out:\t" + unmashed + " (" + unmashed.length() + ")");
 		
 		*****/
-		
-		if (Masher.unmash(Masher.mash(testString)).equals(testString)){
+		boolean success = Masher.unmash(Masher.mash(testString)).equals(testString);
+		System.out.print("Vergleiche....");
+		if (success){
 			System.out.println("OK");
 		} else {
 			System.out.println("Fehler");
